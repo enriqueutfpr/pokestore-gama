@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/flex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--MENU VERTICAL-->
+
+            <div class="col-3 px-0 fixed-top w-100 h-100 visibility"
+                style="box-shadow: 3px 3px 10px #b4b4b4;overflow-x:hidden;">
+
+                <div id="profile-div">
+                    <div>
+                        <img src="./css/assets/img/ash-profile.png" id="profile-img">
+                    </div>
+                    <div>
+                        <h4 class="h4-white-text">Bem vindo treinador</h4>
+                    </div>
+                </div>
+
+                <div class="w-100">
+                    <div class="text-center">
+                        <h4 class="h4-red-text">Pesquisar Pokemon</h4>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <input type="text" class="form-control w-75" placeholder="Nome do pokemon" id="pokename">
+                    </div>
+                </div>
+
+
+                <div>
+
+                    <div class="text-center">
+                        <h4 class="h4-red-text">Filtro de busca</h4>
+                    </div>
+
+
+                    <div class="row w-100 justify-content-center mx-0">
+                        <div class="input-group w-75">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text choose-custom" for="inputGroupSelect01">Tipo1</label>
+                            </div>
+                            <select class="custom-select" id="input-type1">
+                                <option value="null">--</option>
+                                <option value="fire">Fogo</option>
+                                <option value="bug">Inseto</option>
+                                <option value="dark">Escuro</option>
+                                <option value="dragon">Dragão</option>
+                                <option value="electric">Elétrico</option>
+                                <option value="fairy">Fada</option>
+                                <option value="fighting">Lutador</option>
+                                <option value="flying">Voador</option>
+                                <option value="ghost">Fantasma</option>
+                                <option value="grass">Grama</option>
+                                <option value="ground">Terra</option>
+                                <option value="ice">Gelo</option>
+                                <option value="normal">Normal</option>
+                                <option value="poison">Venenoso</option>
+                                <option value="psychic">Psiquico</option>
+                                <option value="rock">Pedra</option>
+                                <option value="steel">Metal</option>
+                                <option value="water">Água</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row w-100 justify-content-center mx-0 mt-4">
+                        <div class="input-group w-75">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text choose-custom">Tipo2</label>
+                            </div>
+                            <select class="custom-select" id="input-type2">
+                                <option value="null">--</option>
+                                <option value="fire">Fogo</option>
+                                <option value="bug">Inseto</option>
+                                <option value="dark">Escuro</option>
+                                <option value="dragon">Dragão</option>
+                                <option value="electric">Elétrico</option>
+                                <option value="fairy">Fada</option>
+                                <option value="fighting">Lutador</option>
+                                <option value="flying">Voador</option>
+                                <option value="ghost">Fantasma</option>
+                                <option value="grass">Grama</option>
+                                <option value="ground">Terra</option>
+                                <option value="ice">Gelo</option>
+                                <option value="normal">Normal</option>
+                                <option value="poison">Venenoso</option>
+                                <option value="psychic">Psiquico</option>
+                                <option value="rock">Pedra</option>
+                                <option value="steel">Metal</option>
+                                <option value="water">Água</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 w-100 d-flex justify-content-center ">
+                    <button type="button" onclick="search()" class=" w-50 choose-custom p-2">Pesquisar</button>
+                </div>
+            </div>
+            <!--FIM DO MENU VERTICAL-->
+
+
+
+            <!-- ESPAÇAMENTO -->
+            <div class="col-0 col-sm-0 col-md-3" id="space">
+
+            </div>
+            <!-- FIM ESPAÇAMENTO-->
+
+            <!-- CONTEUDO PRINCIPAL-->
+            <div class="col-12 col-sm-12 col-md-6 mx-0 w-100 h-100">
+
+                <div id="title-div">
+                    <span>
+                        Pokestore
+                        <img src="./css/assets/img/pokeball.svg" class="img-fluid" id="title-img">
+                    </span>
+                </div>
+
+                <div class="row w-100 mt-4 mx-auto" id="horizontal-menu">
+                    <!--MENU HORIZONTAL-->
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h4 class="h4-red-text">Pesquisar Pokemon</h4>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <input type="text" class="form-control w-75" placeholder="Nome do pokemon" id="pokename2">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="input-group w-75 mt-3 mb-3 mx-auto">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text choose-custom">Tipo1</label>
+                            </div>
+                            <select class="custom-select" id="input-type3">
+                                <option value="null">--</option>
+                                <option value="fire">Fogo</option>
+                                <option value="bug">Inseto</option>
+                                <option value="dark">Escuro</option>
+                                <option value="dragon">Dragão</option>
+                                <option value="electric">Elétrico</option>
+                                <option value="fairy">Fada</option>
+                                <option value="fighting">Lutador</option>
+                                <option value="flying">Voador</option>
+                                <option value="ghost">Fantasma</option>
+                                <option value="grass">Grama</option>
+                                <option value="ground">Terra</option>
+                                <option value="ice">Gelo</option>
+                                <option value="normal">Normal</option>
+                                <option value="poison">Venenoso</option>
+                                <option value="psychic">Psiquico</option>
+                                <option value="rock">Pedra</option>
+                                <option value="steel">Metal</option>
+                                <option value="water">Água</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="input-group w-75 mt-3 mb-3 mx-auto">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text choose-custom">Tipo2</label>
+                            </div>
+                            <select class="custom-select" id="input-type4">
+                                <option value="null">--</option>
+                                <option value="fire">Fogo</option>
+                                <option value="bug">Inseto</option>
+                                <option value="dark">Escuro</option>
+                                <option value="dragon">Dragão</option>
+                                <option value="electric">Elétrico</option>
+                                <option value="fairy">Fada</option>
+                                <option value="fighting">Lutador</option>
+                                <option value="flying">Voador</option>
+                                <option value="ghost">Fantasma</option>
+                                <option value="grass">Grama</option>
+                                <option value="ground">Terra</option>
+                                <option value="ice">Gelo</option>
+                                <option value="normal">Normal</option>
+                                <option value="poison">Venenoso</option>
+                                <option value="psychic">Psiquico</option>
+                                <option value="rock">Pedra</option>
+                                <option value="steel">Metal</option>
+                                <option value="water">Água</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 w-100 d-flex justify-content-center ">
+                        <button type="button" onclick="search()" class=" w-50 choose-custom p-2">Pesquisar</button>
+                    </div>
+                         <!--FIM MENU HORIZONTAL-->
+
+                </div>
+
+
+                <div class="row" id="main-content">
+
+                </div>
+
+
+                <div class="row d-flex justify-content-center mt-5">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+
+                            <li class="page-item active" onclick="setActive(this)"><a class="page-link" href="#">1</a></li>     
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item " onclick="setActive(this)"><a class="page-link" href="#">7</a></li>               
+                            
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- FIM MENU PRINCIPAL -->
+
+            <div class="col-12 col-md-3 fixed-right px-0 w-100">
+
+                <div class="d-flex w-100 h3" id="market-cart-header">
+                    <h3>Carrinho</h3>
+                    <img src="./css/assets/img/cart.svg" class="img-fluid">
+                </div>
+
+                <div class="w-100 d-flex mt-4 px-0 flex-column"
+                    style="background-color: white; border-radius: 5px; text-align: center;">
+                    <table class="table table-striped" style="box-shadow: 0px 5px 10px #cfcfcf;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="border: 0px;">Remover</th>
+                                <th scope="col" style="border: 0px;">Pokemon</th>
+                                <th scope="col" style="border: 0px;">Preço</th>
+                                <th scope="col" style="border: 0px;">Quant</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartTable">
+                        </tbody>
+                    </table>
+
+                    <div class=" w-100 d-flex justify-content-center ">
+                        <button type="button" onclick="finishBuying()" class=" w-100 choose-custom p-2" data-toggle="modal" data-target="#exampleModalCenter" >Comprar</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Compra finalizada!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            Pokemons comprados com sucesso! Obrigado pela preferência, volte sempre!
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn choose-custom" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>

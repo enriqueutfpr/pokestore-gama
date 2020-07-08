@@ -1,0 +1,338 @@
+body
+{
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6,h7,p,label,option,button
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+#profile-div
+{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 12rem;
+    background-image: url("./assets/img/profile-background.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#profile-img
+{
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 95px;
+    height: auto;
+    background-color: white;
+}
+
+#title-div
+{
+    padding-top: 1.92rem;
+    padding-bottom: 1.92rem;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+    text-align: center;
+    box-shadow: 0px 3px 10px #b3b3b3;
+    background-color: #ff3333;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title-img
+{
+    width: 75px;
+    height: auto;
+    margin-left: 15px;
+}
+
+#market-cart-header
+{
+    height: 12rem;
+    box-shadow: 0px 3px 10px #b3b3b3;
+    background-color: #ff3333;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#market-cart-header img
+{
+    width: 90px;
+    height: auto;
+}
+
+#market-cart-header h3
+{
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+}
+
+#horizontal-menu
+{
+    display: none;
+}
+
+#space
+{
+    display: block;
+}
+
+
+
+.h4-white-text
+{
+    margin-top: 1.4rem;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.h4-red-text
+{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #ff3333;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.choose-custom
+{
+    border: 0px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 4px;
+}
+
+.choose-custom:hover
+{
+    border: 0px;
+    background-color: #ff3333;
+    color: white;
+}
+
+.choose-custom:active
+{
+    border: 0px;
+    background-color: #ff3333;
+    color: white;
+}
+
+.choose-custom:focus
+{
+    border: 0px;
+    background-color: #ff3333;
+    color: white;
+}
+
+.custom-select
+{
+    text-align: center;
+}
+
+.visibility
+{
+    display: block;
+}
+
+.background-type
+{
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top:2px;
+     padding-bottom: 2px;
+     border-radius: 20px;
+     color: white;
+     margin-right: 3px;
+     margin-left: 3px;
+}
+
+.type-fire
+{
+    background-color: #F08030;
+}
+
+.type-water
+{
+    background-color: #6890F0;
+}
+
+.type-grass
+{
+    background-color: #78C850;
+}
+
+.type-electric
+{
+    background-color: #F8D030;
+}
+
+.type-psychic
+{
+    background-color: #F85888;
+}
+
+.type-ice
+{
+    background-color: #98D8D8;
+}
+
+.type-dragon
+{
+    background-color: #7038F8;
+}
+
+.type-dark
+{
+    background-color: #705848;
+}
+
+.type-fairy
+{
+    background-color: #EE99AC;
+}
+
+.type-normal
+{
+    background-color: #A8A878;
+}
+
+.type-fighting
+{
+    background-color: #C03028;
+}
+
+.type-flying
+{
+    background-color: #A890F0;
+}
+
+.type-poison
+{
+    background-color: #A040A0;;
+}
+
+.type-ground
+{
+    background-color: #E0C068;
+}
+
+.type-rock
+{
+    background-color: #B8A038;
+}
+
+.type-bug
+{
+    background-color: #A8B820;
+}
+
+.type-ghost
+{
+    background-color: #705898;
+}
+
+.type-steel
+{
+    background-color: #B8B8D0;
+}
+
+.poke-type-div
+{
+    width: 100%; 
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card
+{
+    box-shadow: 0px 5px 10px #cfcfcf;
+}
+
+.table td, .table th 
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 13.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-item.active .page-link
+{
+    background-color: #ff4d4d;
+    border: #ff4d4d;
+}
+
+.page-link 
+{
+    color: #212529;
+}
+
+@media(max-width:768px)
+{
+    .visibility
+    {
+        display: none;
+    }
+
+    .card
+    {
+        width: 60%;
+    }
+
+    .small-screen-align
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #title-div
+    {
+        height: 8rem;
+    }
+
+    #market-cart-header
+    {
+        margin-top: 25px;
+        height: 8rem;
+    }
+
+    #horizontal-menu
+    {
+        display: block;
+    }
+
+    #space
+    {
+        display: none;
+    }
+
+}
